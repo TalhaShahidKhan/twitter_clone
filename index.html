@@ -18,11 +18,11 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
-<body class="bg-gray-950 text-white">
-    <div class="sticky top-0 top pt-1 bg-gray-950 text-gray-600 font-semibold">
+<body class="bg-black text-white">
+    <div class="sticky top-0 top pt-1 bg-black font-semibold w-full md:w-[60%] md:mx-auto lg:m-0 lg:w-full lg:pt-0">
         <div class="top1 flex items-center justify-between">
-            <div class="pic p-2">
-                <img class="rounded-full" src="assets/porfile.jpg" alt="prof">
+            <div class="pic p-2 lg:mx-4 lg:py-1">
+                <img class="rounded-full bg-cover w-9" src="assets/profile.jpg" alt="prof">
             </div>
             <div class="logo p-2">
                 <svg viewBox="0 0 24 24" aria-hidden="true" class="invert h-7">
@@ -39,28 +39,150 @@
                 </span>
             </div>
         </div>
-        <div class="top2 flex items-center justify-between">
-            <div class="butns pt-3 mx-3 text-nowrap">
-                <h1>For You</h1>
+        <div
+            class="top2 border-b-[1px] border-gray-500 flex items-center justify-between overflow-auto no-scrollbar lg:hidden">
+            <div class="butns  mx-3 text-nowrap">
+                <h1 class="py-3">For You</h1>
+                <div class="relative bottom-0 h-1 w-[3rem] mx-auto bg-sky-600 rounded-full "></div>
             </div>
-            <div class="butns py-3 mx-3 text-nowrap">
-                <h1>Following</h1>
+            <div class="butns  text-gray-500  mx-3 text-nowrap">
+                <h1 class="py-3">Following</h1>
             </div>
-            <div class="butns py-3 mx-3 text-nowrap">
-                <h1>Web Development Geeks</h1>
+            <div class="butns  text-gray-500  mx-3 text-nowrap">
+                <h1 class="py-3">Web Development Geeks</h1>
             </div>
-            <div class="butns py-3 mx-3 text-nowrap">
-                <h1>Web Development Geeks</h1>
+            <div class="butns   text-gray-500  mx-3 text-nowrap">
+                <h1 class="py-3">Python Development Community</h1>
             </div>
-            <div class="absolute left-[15px] bottom-0 h-1 w-[3rem] mx-auto bg-sky-600 rounded-full "></div>
+            <div class="butns   text-gray-500  mx-3 text-nowrap">
+                <h1 class="py-3">Programming Hero</h1>
+            </div>
+            <div class="butns  text-gray-500  mx-3 text-nowrap">
+                <h1 class="py-3">Cyber-71 BD</h1>
+            </div>
+
         </div>
     </div>
 
-    <div class="posts border border-y-[1px]">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, minus? Tenetur, impedit fuga! Consectetur,
-            id odit fuga quisquam dignissimos quos aspernatur ad ex harum recusandae architecto labore cum eveniet
-            laudantium?</p>
+    <div class="lg_flex lg:flex items-start justify-between gap-4">
+        <div class="posts  md:mx-auto  w-full lg:ml-8 lg:w-[60%] ">
+            <div class="post flex border-b border-r border-l border-gray-500 flex-row items-start justify-start p-3">
+                <div class="avatar p-2">
+                    <img class="rounded-full bg-cover w-12 m-1" src="assets/profile.jpg" alt="prof">
+                </div>
+                <div class="details w-full p-2">
+                    <div class="name flex items-center justify-between">
+                        <div>
+                            <span class="font-bold">Tasnim Trisa</span>
+                            <span class="text-gray-600">@trisa_afreen . 7m</span>
+                        </div>
+                        <div>
+                            <button
+                                class="hover:bg-gray-700 p-[0.5rem] rounded-full relative -z-10 block  text-gray-700 bg-black">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="invert w-5 h-5" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path
+                                        d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="content text-sm font-lite py-2">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In deserunt quasi iste voluptate
+                            om px-4 py-2nis
+                            aliqurounded-3d afont-bold text-lgperiam labore explicabo et deleniti doloremque saepe vel
+                            magni, eligendi iusto
+                            fugiat
+                            rem tenetur nulla?</p>
+                    </div>
+                    <div class="reaction flex items-center justify-between pt-3">
+                        <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                            <img src="assets/comment.svg" alt="">
+                        </div>
+                        <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                            <img src="assets/repost.svg" alt="">
+                        </div>
+                        <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                            <img src="assets/love.svg" alt="">
+                        </div>
+                        <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                            <img src="assets/bar.svg" alt="">
+                        </div>
+                        <div class="flex items-end justify-end space-x-2">
+                            <img class="hover:bg-gray-700 p-[0.5rem] rounded-full" src="assets/bookmark.svg" alt="">
+                            <img class="hover:bg-gray-700 p-[0.5rem] rounded-full" src="assets/arrow.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right_side hidden lg:block lg:w-[40%] md:w-[60%]">
+            <div class="flex flex-col items-start justify-start gap-4">
+                <div
+                    class="subscribe flex items-start justify-center flex-col gap-5 border p-3 w-[90%] mx-1 border-gray-500 rounded-xl">
+                    <h1 class="font-bold text-2xl ">Subscribe To Primium</h1>
+                    <p class="text-sm font-lite">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
+                        error, itaque facrum sequi ratione!</p>
+                    <a href="/" class="text-white px-4 py-2 bg-sky-500 hover:bg-sky-600 rounded-3xl font-bold text-lg">
+                        Subscribe
+                    </a>
+                </div>
+                <div
+                    class="subscribe flex items-start justify-center flex-col gap-5 border p-3 w-[90%] mx-1 border-gray-500 rounded-xl">
+                    <h1 class="font-bold text-2xl ">Go Live</h1>
+                    <p class="text-sm font-lite">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
+                        error, itaque facrum sequi ratione!</p>
+                    <a href="/" class="text-white px-4 py-2 bg-sky-500 hover:bg-sky-600 rounded-3xl font-bold text-lg">
+                        Click here
+                    </a>
+                </div>
+                <div
+                    class="subscribe flex items-start justify-center flex-col gap-5 border p-3 w-[90%] mx-1 border-gray-500 rounded-xl">
+                    <h1 class="font-bold text-2xl ">People You may Know</h1>
+                    <div class="flex items-center justify-between w-full">
+                        <div class="flex flex-row items-center justify-center">
+                            <img src="assets/pr2.jpg" class="w-9 mr-2 h-9 object-cover rounded-full" alt="">
+                            <h2>Talha Shahid Khan</h2>
+                        </div>
+                        <div>
+                            <a href="/" class="text-black px-4 py-2 bg-white hover:bg-slate-100 rounded-3xl font-semibold text-md">
+                                Follow
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    <div class="down sticky bottom-0  bg-black w-full">
+        <div class="flex items-center justify-around py-2 border-t border-gray-500 px-4 z-50">
+            <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                <img src="assets/home.svg" alt="">
+            </div>
+            <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                <img src="assets/search.svg" alt="">
+            </div>
+            <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                <img src="assets/check.svg" alt="">
+            </div>
+            <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                <img src="assets/bell.svg" alt="">
+            </div>
+            <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                <img src="assets/friends.svg" alt="">
+            </div>
+            <div class="hover:bg-gray-700 p-[0.5rem] rounded-full">
+                <img src="assets/msg2.svg" alt="">
+            </div>
+        </div>
+        
+    </div>
+
+
+
+
+
 </body>
 
 </html>
